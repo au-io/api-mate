@@ -107,7 +107,7 @@ window.ApiMate = class ApiMate
   initializeMenu: ->
     vbridge = "7" + pad(Math.floor(Math.random() * 10000 - 1).toString(), 4)
     $("[data-api-mate-param*='voiceBridge']").val(vbridge)
-    name = "random-" + Math.floor(Math.random() * 10000000).toString()
+    name = "mpsc-conf-" + Math.floor(Math.random() * 10000000).toString()
     $("[data-api-mate-param*='name']").val(name)
     $("[data-api-mate-param*='meetingID']").val(name)
     $("[data-api-mate-param*='recordID']").val(name)

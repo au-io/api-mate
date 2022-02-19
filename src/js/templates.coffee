@@ -19,7 +19,7 @@ resultsTemplate =
        {{/urls}}
      </div>
      <div class='api-mate-result-title'>
-       <h5 class='label-title'>Results {{title}}:</h5>
+       <h5 class='label-title'>Generated {{title}}:</h5>
      </div>
    </div>"
 
