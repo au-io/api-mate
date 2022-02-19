@@ -130,7 +130,7 @@ window.ApiMate = class ApiMate
       if desc.match(/recording/i)
         item.urlClass = "api-mate-url-recordings"
       else if desc.match(/mobile/i)
-        item.urlClass = "api-mate-url-from-mobile"
+        item.urlClass = "api-mate-url-standard"
       else if desc.match(/custom call/i)
         item.urlClass = "api-mate-url-custom-call"
       else
@@ -239,9 +239,9 @@ window.ApiMate = class ApiMate
 
     # for mobile
     params['password'] = params['moderatorPW']
-    @urls.push _elem("join", "mobile call: join as moderator", api.setMobileProtocol(api.urlFor("join", params)))
+    #@urls.push _elem("join", "mobile call: join as moderator", api.setMobileProtocol(api.urlFor("join", params)))
     params['password'] = params['attendeePW']
-    @urls.push _elem("join", "mobile call: join as attendee", api.setMobileProtocol(api.urlFor("join", params)))
+    #@urls.push _elem("join", "mobile call: join as attendee", api.setMobileProtocol(api.urlFor("join", params)))
 
   # Empty all inputs in the configuration menu
   clearAllFields: ->
